@@ -1,0 +1,9 @@
+<div class="col-lg-4">
+  <h3>Add a new product</h3>
+<form>
+  <input class="form-control" #newName placeholder="Name" required>
+    <input class="form-control" #newBrand placeholder="Brand" required>
+    <input class="form-control" #newPrice placeholder="Price" required>
+  <button (click)="submitForm(newName.value, newBrand.value, newPrice.value)">Add Product</button>
+</form>
+</div>
